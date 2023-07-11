@@ -1,4 +1,4 @@
-const { test,expect } = require("@playwright/test");
+const { test, expect } = require("@playwright/test");
 
 test("Prvi test", async ({ browser }) => {
   const mojPretrazivac = await browser.newContext();
@@ -9,7 +9,7 @@ test("Prvi test", async ({ browser }) => {
 
 test.only("Drugi test", async ({ page }) => {
   await page.goto("https://google.com");
-  await expect(page).toHaveTitle('Google');
-
+  await expect(page).toHaveTitle("Google");
 });
 
+//Dodali komentar
